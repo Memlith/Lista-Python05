@@ -1,5 +1,6 @@
 def aluno():
     print("Caio Simonassi\n1051392421012\n1º Semestre DSM")
+aluno()
 
 peso = float(input("\nDigite seu peso: "))
 sexo = input("\n[F] Feminino \n[M] Masculino\nSelecione seu sexo: ")
@@ -30,14 +31,12 @@ def masculinoCalc(resultado):
     elif resultado >= 25:
         print("\nPelos cálculos, seu peso está acima do ideal.")
         print(f"seu IMC é {resultado:.2f}")
-
-aluno()
-
+        
 imc = IMC(peso, altura)
 
 if sexo == "F":
-    print(femininoCalc(imc))
+    femininoCalc(imc)
 elif sexo == "M":
-    print(masculinoCalc(imc))
+    masculinoCalc(imc)
 else:
     print("Gênero inválido")

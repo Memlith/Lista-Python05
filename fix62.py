@@ -1,6 +1,7 @@
 def aluno():
     print("Caio Simonassi\n1051392421012\n1º Semestre DSM")
-    
+aluno()
+
 def calcular_pagamento(HT, VH):
 
     if HT <= 40:
@@ -17,5 +18,4 @@ def calcular_pagamento(HT, VH):
 totalHoras = float(input("Digite quantas horas foram trabalhadas: "))
 salarioHora = float(input("Digite quanto vale sua hora: "))
 
-aluno()
 calcular_pagamento(totalHoras, salarioHora)
